@@ -8,9 +8,7 @@ import (
 // time complexity O(n2)
 
 func swap(a []int, idx1 int) {
-	temp := a[idx1]
-	a[idx1] = a[idx1+1]
-	a[idx1+1] = temp
+	a[idx1], a[idx1+1] = a[idx1+1], a[idx1]
 }
 
 func main() {
